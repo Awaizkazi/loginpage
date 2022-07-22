@@ -10,6 +10,7 @@ void main() {
       routes: {
         'login': (context) => MyLogin(),
         'register': (context) => MyRegister(),
+        // Owaiz Kazi
       },
     ),
   );
