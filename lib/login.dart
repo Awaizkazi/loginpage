@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class MyLogin extends StatefulWidget {
@@ -44,6 +46,10 @@ class _MyLoginState extends State<MyLogin> {
                                 fillColor: Colors.grey.shade100,
                                 filled: true,
                                 hintText: "Email",
+                                prefixIcon: const Icon(
+                                  Icons.email,
+                                  color: Colors.blue,
+                                ),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
@@ -58,6 +64,7 @@ class _MyLoginState extends State<MyLogin> {
                                 fillColor: Colors.grey.shade100,
                                 filled: true,
                                 hintText: "Password",
+                                prefixIcon: Icon(Icons.password_rounded),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
